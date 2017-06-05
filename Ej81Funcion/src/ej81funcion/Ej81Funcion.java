@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+8.1) Definir la función resto, que devuelve (sin usar el operador %) el resto del cociente
+entre dos números enteros recibidos como parámetros.
  */
 package ej81funcion;
 
@@ -29,11 +28,8 @@ public class Ej81Funcion {
     }
  
     public static int funcionResto (int dividendo ,  int divisor){
-    int cociente;
-    
-     cociente = dividendo / divisor;
-    
-  return (dividendo-(divisor *  cociente));     
         
+  return dividendo-( divisor *  (dividendo / divisor ) );     
+             
     }
 }
